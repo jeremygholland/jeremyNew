@@ -6,13 +6,20 @@
 	margin-top: 10vh
 }
 
-.nav {
-	display: flex;
-  flex-direction: column;
+.titleTrack{
+	font-size: 4em;
+	margin-bottom: -1em
 }
-.sideBar {
-  		flex-basis: auto;
+
+.nav{
+	position: relative;
 }
+
+.main{
+	position: fixed;
+}
+
+.all {background-color: #ff8a80}
 
 @keyframes rotateFall {
     0%      { transform: rotateZ(0deg); }
@@ -75,13 +82,28 @@
 }
 
 .firstName {
-	background-color: #83caff;
+	background-color: #40c4ff;
 	color: #000;
 }
+.skillBar{
+	font-size: 1.5em;
+	color: white;
+	margin-top: -1vh;
+	margin-bottom: -1vh;
+}
 
-.lastName {
+.lastName, .xp, .titleTrack {
 	background-color: transparent;
-	color: #83caff;
+	color: #40c4ff;
+	text-shadow: 2px 2px 2px black;
+}
+.resStuff,  .projects, .button{
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+.projDesc {
+	font-size: 1.2em
 }
 
 .title {

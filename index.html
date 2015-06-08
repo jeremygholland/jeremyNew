@@ -9,25 +9,28 @@
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="author" href="humans.txt">
         <link rel="stylesheet" type="text/css" href="css/newJeremy.css">
+        <link rel="stylesheet" type="text/css" href="css/skillbar.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css" rel="stylesheet">
     </head>
     <body> 
+        <div class="all">
             <div class="row"> 
                 <div class="col s12 center-align"> 
-                    <span class = "title firstName">Jeremy Holland</span>
+                    <span class = "title firstName z-depth-2">Jeremy Holland</span>
+
                     <span class = "title lastName">Front End Web Developer</span>
                 </div>
             </div>
             <div class="row">
                 <div class="navBar col s2 center-align nav">
                     <div class="sideBar">
-                    <a class="waves-effect waves-light btn-large" ui-sref = "resume"> Resume</a>
-                    <a class="waves-effect waves-light btn-large leftButton"> Skills </a>
-                    <a class="waves-effect waves-light btn-large leftButton" ui-sref = "projects"> Projects </a>
-                    <a class="waves-effect waves-light btn-large leftButton"> About Me</a> 
+                    <a class="waves-effect waves-light btn-large light-blue accent-2 card z-depth-2 button" ui-sref = "resume"> Resume</a>
+                    <a class="waves-effect waves-light btn-large leftButton light-blue accent-2 card z-depth-2 button" ui-sref = "skills"> Skills </a>
+                    <a class="waves-effect waves-light btn-large leftButton light-blue accent-2 card z-depth-2 button" ui-sref = "projects"> Projects </a>
+                    <a class="waves-effect waves-light btn-large leftButton light-blue accent-2 card z-depth-2 button"> About Me</a> 
                     </div>
                 </div>
-                <div class="col s8 center-align">
+                <div class="col s8  center-align">
                    <div ui-view class = "{{pageClass}}">
                        
                    </div>
@@ -55,7 +58,7 @@
                     </ul>
                 </div>
             </div>
-
+</div>
 
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

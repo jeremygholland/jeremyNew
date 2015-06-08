@@ -16,6 +16,11 @@ app.config([
 				url: '/projects',
 				templateUrl: '/views/projects.html'
 			})
+			.state('skills', {
+				controller: 'skillsCtrl',
+				url: '/skills',
+				templateUrl: '/views/skills.html'
+			})
 	}
 	])
 
@@ -24,4 +29,7 @@ $scope.pageClass = "page-home";
 }]);
 app.controller('resumeCtrl', ['$scope', '$state', function($scope, $state){
 $scope.pageClass = "page-resume";
+}]);
+app.controller('skillsCtrl', ['$scope', '$state', function($scope, $state){
+$scope.pageClass = "page-about";
 }]);
